@@ -2,3 +2,5 @@ Flask
 werkzeug
 gunicorn
 pytest
+pytest-cov
+flake8
