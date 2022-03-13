@@ -1,6 +1,6 @@
 FROM python:3.7-slim
 
-ENV INSTALL_PATH /gamble
+ENV INSTALL_PATH /app
 RUN mkdir -p $INSTALL_PATH
 
 WORKDIR $INSTALL_PATH
@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "gamble.app:create_app()"
+CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "app.app:create_app()"
