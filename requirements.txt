@@ -4,3 +4,13 @@ gunicorn
 pytest
 pytest-cov
 flake8
+redis
+celery
+
+# Forms.
+Flask-WTF
+WTForms-Components
+
+# Extensions.
+flask-debugtoolbar
+Flask-Mail
