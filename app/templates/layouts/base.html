@@ -8,7 +8,7 @@
           content="{% block meta_description %}{% endblock %}">
 
     <title>{% block title %}{% endblock %}</title>
-
+ 
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='styles/vendor/bootstrap.min.css') }}">
@@ -41,7 +41,7 @@
           </a>
         </div>
       </div>
-    </nav>
+    </nav> 
 
     <main class="container">
       <div class="md-margin-top">{% block heading %}{% endblock %}</div>
@@ -51,7 +51,7 @@
     <footer class="footer text-center">
       <div class="container">
         <ul class="list-inline">
-          <li class="text-muted">Snake Eyes &copy; 2016</li>
+          <li class="text-muted">Snake Eyes &copy; 2022</li>
           <li><a href="{{ url_for('page.privacy') }}">Privacy Policy</a></li>
           <li><a href="{{ url_for('page.terms') }}">Terms of Service</a></li>
         </ul>
