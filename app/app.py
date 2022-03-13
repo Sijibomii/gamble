@@ -1,7 +1,7 @@
 from flask import Flask
 from app.blueprints.page import page
 
-app = create_app()
+myapp = create_app()
 
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
