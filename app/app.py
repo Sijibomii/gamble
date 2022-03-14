@@ -4,7 +4,7 @@ from celery import Celery
 from app.blueprints.contact import contact
 from app.extensions import debug_toolbar, mail, csrf
 from app.extensions import debug_toolbar
-
+ 
 CELERY_TASK_LIST = [
     'app.blueprints.contact.tasks',
 ]
@@ -36,7 +36,11 @@ def create_celery_app(app=None):
     return celery
 
 
-
+def extensions(app):
+  debug_toolbar.init_app(app)
+  mail.init_app(app)
+  csrf.init_app(app)
+  return None
 
 def create_app(settings_override=None):
   app = Flask(__name__, instance_relative_config=True)
@@ -52,8 +56,3 @@ def create_app(settings_override=None):
 myapp = create_app()
 
 
-def extensions(app):
-  debug_toolbar.init_app(app)
-  mail.init_app(app)
-  csrf.init_app(app)
-  return None
