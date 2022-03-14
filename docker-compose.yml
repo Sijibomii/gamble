@@ -10,7 +10,7 @@ services:
       - '6379:6379'
   celery:
     build: .
-    command: celery worker -l info -A app.blueprints.contact.tasks
+    command: celery -A app.blueprints.contact.tasks worker
     env_file:
       - '.env'
     volumes:
@@ -29,3 +29,5 @@ services:
       - '.:/app'
     ports:
       - '8000:8000'
+volumes:
+  redis:

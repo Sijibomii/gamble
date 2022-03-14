@@ -8,9 +8,9 @@ redis
 celery
 
 # Forms.
-Flask-WTF
-WTForms-Components
+Flask-WTF==0.9.5
+WTForms-Components==0.9.7
 
 # Extensions.
-flask-debugtoolbar
-Flask-Mail
+flask-debugtoolbar==0.10.0
+Flask-Mail==0.9.1

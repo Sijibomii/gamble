@@ -7,7 +7,7 @@ WORKDIR $INSTALL_PATH
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-RUN pip install --editable .
-COPY . .
 
+COPY . .
+RUN pip install --editable .
 CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "app.app:create_app()"
