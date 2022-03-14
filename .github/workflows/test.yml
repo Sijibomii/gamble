@@ -15,7 +15,7 @@ jobs:
       DEBUG: True
     strategy:
       matrix: 
-        python-version: [3.7]
+        python-version: [3.7.12]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
