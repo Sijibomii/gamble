@@ -1,4 +1,4 @@
-Flask
+Flask==0.10.1
 werkzeug==0.16.1
 gunicorn
 pytest
@@ -6,6 +6,8 @@ pytest-cov
 flake8
 redis
 celery
+# CLI.
+Click==6.4
 
 # Forms.
 Flask-WTF==0.9.5
