@@ -1,5 +1,5 @@
 DEBUG = True
-SERVER_NAME = 'localhost:8000'
+# SERVER_NAME = 'localhost:8000' 
 SECRET_KEY = 'mysecretkey'
 
 # Flask-Mail.
@@ -18,3 +18,4 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_REDIS_MAX_CONNECTIONS = 5
+ 
