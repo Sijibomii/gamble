@@ -1,5 +1,5 @@
 Flask
-werkzeug
+werkzeug==0.16.1
 gunicorn
 pytest
 pytest-cov
